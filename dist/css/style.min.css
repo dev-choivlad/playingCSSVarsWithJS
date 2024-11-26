@@ -335,3 +335,29 @@ template {
   font-weight: 700;
   font-style: normal;
 }
+:root {
+  --base: #ff94b6;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+body {
+  background-color: #193549;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+.highlighted {
+  text-transform: uppercase;
+  color: var(--base);
+}
+
+.my-image {
+  padding: var(--spacing);
+  background-color: var(--base);
+  filter: blur(var(--blur));
+}
